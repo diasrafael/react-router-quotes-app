@@ -21,7 +21,7 @@ const NewCommentForm = (props) => {
   useEffect(() => {
     if (status === 'completed' && !error)
     props.onCommentAdded();
-  }, [status, error, props.onCommentAdded]);
+  }, [status, error, props]);
 
   return (
     <form className={classes.form} onSubmit={submitFormHandler}>

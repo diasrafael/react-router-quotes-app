@@ -25,7 +25,7 @@ const Comments = () => {
   const commentAddedHandler = useCallback(() => {
     sendRequest(params.quoteId);
     setIsAddingComment(false);
-  },[])
+  },[params.quoteId, sendRequest])
   
   return (
     <section className={classes.comments}>
